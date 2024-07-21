@@ -1,6 +1,8 @@
 # What I Learn Here
 
+## 1.seen[i] = 1
+  seen[i] = 1 marks the element i as encountered by setting its value in the seen dictionary to 1
+    ex: seen={2:1,3:1,2:1}
 
-
-nums[:] = ...: This updates the original list nums in place. The slice assignment nums[:] means "replace the entire contents of the list nums with the following".
-The result of the sorted unique elements replaces the original contents of nums.
+## 2.nums[:]
+   means updating the entire list nums in place, preserving the original list object.
