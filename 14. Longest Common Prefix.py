@@ -7,4 +7,3 @@ class Solution(object):
                 if not p:
                     return ""
         return p
-    
