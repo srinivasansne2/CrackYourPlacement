@@ -6,3 +6,5 @@
 
 ## 2.nums[:]
    means updating the entire list nums in place, preserving the original list object.
+
+## 2.Checking
