@@ -8,4 +8,4 @@ class Solution:
             elif not stack or brackets[stack.pop()] != char:
                 return False
         return not stack
-            
+    
