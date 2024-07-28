@@ -6,3 +6,9 @@
 
 ## 2.nums[:]
    means updating the entire list nums in place, preserving the original list object.
+   So we don't need to create a variable
+
+## 3.enumerate
+  enumerate creates a list to index value & value like dict
+    ex: A=[Apple,Car,Cat]
+        A=[(0,Apple),(1,Car),(2,Cat)]
