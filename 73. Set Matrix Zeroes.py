@@ -12,3 +12,4 @@ class Solution:
                 matrix[i][k] = 0
             for l in range(m):
                 matrix[l][j] = 0
+                
