@@ -14,4 +14,4 @@
   enumerate creates a list to index value & value like dict
     ex: A=[Apple,Car,Cat]
         A=[(0,Apple),(1,Car),(2,Cat)]
-    Refer:1
+  Refer:1
