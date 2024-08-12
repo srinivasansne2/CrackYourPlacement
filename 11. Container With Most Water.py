@@ -1,32 +1,15 @@
-
-def maxArea(height: List[int]) -> int:
-    # starting max
-    m = 0
-    # two pointers
-    i = 0
-    j = len(height)-1
-    # max height
-    mh = max(height)
-    while i < j:
-        # set the area to the min height * the distance between the two col
-        area = min(height[i], height[j]) * (j-i)
-
-        # update max if necessary
-        m = max(m, area)
-
-
-        if mh * (j - i) <= m:
-            break
-
-        if height[i] < height[j]:
-            i += 1
-        else:
-            j -= 1
-
-    return m
-
-f = open('user.out', 'w')
-for case in map(loads, stdin):
-    f.write(f"{maxArea(case)}\n")
-f.flush()
-exit(0)
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        r , l = len(height)-1, 0
+        res=0
+        while l<r:
+            d=r-l
+            m=min(height[l],height[r])
+            f=d*m
+            if f>res:
+                res=f
+            elif height[l]>height[r]:
+                r=r-1
+            else:
+                l+=1
+        return res
