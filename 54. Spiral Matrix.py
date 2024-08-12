@@ -1,20 +1,16 @@
 class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        m, n = len(matrix), len(matrix[0])
-        count, direction = m * n, 1
-        i, j, result = 0, -1, []
-
-        while len(result) != count:
-            for _ in range(n):
-                j += direction
-                result.append(matrix[i][j])
-            m -= 1
-
-            for _ in range(m):
-                i += direction
-                result.append(matrix[i][j])
-            n -= 1
-
-            direction *= -1
-        
-        return result
+    def maxArea(self, height: List[int]) -> int:
+        l=0
+        r=len(height)-1
+        res=0
+        while l<r:
+            d=r-l
+            m=min(height[l],height[r])
+            f=d*m
+            if f>res:
+                res=f
+            elif height[l]>height[r]:
+                r=r-1
+            else:
+                l+=1
+        return res
