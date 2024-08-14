@@ -19,4 +19,6 @@
 
   ## 4.float('inf')
     This Mean Its a float data type & infinity there is no value grater than this , We can Create minus infinity also
+    positive_infinity=float('inf')
+    negative_infinity=float('-inf')
     Refer:121
